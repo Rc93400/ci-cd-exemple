@@ -24,6 +24,15 @@ jobs:
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
+    
+      
+    checkout:
+      runs-on: ubuntu-latest
 
+      steps:
+        # Step 1: Checkout the code from the repository
+        - name: Checkout code
+          uses: actions/checkout@v3
+  
       
 
